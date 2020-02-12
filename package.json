@@ -1,0 +1,22 @@
+{
+  "name": "basic-typescript",
+  "version": "1.0.0",
+  "description": "typescript-basic tranning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alittlegit/basic-typescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "ccb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alittlegit/basic-typescript/issues"
+  },
+  "homepage": "https://github.com/alittlegit/basic-typescript#readme"
+}
