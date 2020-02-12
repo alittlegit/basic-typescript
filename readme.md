@@ -19,3 +19,8 @@
   - 执行tsc index.ts，会生成index.js  
   - 在package.json中添加启动命令： "start": "tsc index.ts && node index.js ", 然后执行npm start 便可以先编译index.ts为index.js，然后node执行index.js
   - tsconfig中扩展配置编译选项： tsc -init,生成tsconfig.json, 配置输出文件路径，"outDir": "./out",输入文件路径： "rootDir":"./"    ; tsconfig.json中的编译文件可以去掉了，命令改为  "start": "tsc  && node index.js "
+
+## ts类型定义
+* var a: string;
+* tsc -w 监视ts文件,保存时自动编译，
+* 体会类型检查的作用，ts在编译时便会报错，ts成功编译为js代码再运行js代码，而js代码不会有检查过程，只有在执行时才会报错。
