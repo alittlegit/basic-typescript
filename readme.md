@@ -11,3 +11,11 @@
   
 * 修改文件后本地git status; git add ; git commit; 远程git push; 远程提交时如果用的git的http地址，需要输入用户密码，不如在git客户端方便点，可以考虑在本地都提交后统一在客户端提交到远程，，改用ssh地址，不用每次远程提交都输密码
 * 远程git地址换成ssh地址： git remote remove origin; git remote add origin git@github.com:alittlegit/basic-typescript.git   git push -u origin master
+
+## ts安装和编译
+* ts安装： npm install typescript -g 
+* 检查安装： tsc --version
+* ts编译： 
+  - 执行tsc index.ts，会生成index.js  
+  - 在package.json中添加启动命令： "start": "tsc index.ts && node index.js ", 然后执行npm start 便可以先编译index.ts为index.js，然后node执行index.js
+  - tsconfig中扩展配置编译选项： tsc -init,生成tsconfig.json, 配置输出文件路径，"outDir": "./out",输入文件路径： "rootDir":"./"    ; tsconfig.json中的编译文件可以去掉了，命令改为  "start": "tsc  && node index.js "
